@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1810" height="1130" viewBox="0 0 1810 1130" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="ah_info" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3d4654"/></marker>
+<marker id="ah_info2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3d4654"/></marker>
+<marker id="ah_power" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c98a00"/></marker>
+<marker id="ah_logic" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f8a4c"/></marker>
+<marker id="ah_safety" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c62828"/></marker>
+<marker id="ah_status" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c62828"/></marker>
+<marker id="ah_dev" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c8c8c"/></marker>
+<marker id="ah_charge" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c8c8c"/></marker>
+</defs>
+<rect x="0" y="0" width="1810" height="1130" fill="#ffffff"/>
+<text x="24" y="44" font-size="30" font-weight="bold" fill="#1b2230">WB-700 - preliminary electronics architecture (boards + interfaces)</text>
+<text x="24" y="76" font-size="17" fill="#555d6b">PH = placeholder part class (final selection in Phase 2). Buses: CSI-2 camera, UART/USB Pi-to-MCU, I2C/SPI sensors, PIO quadrature encoders, PWM/DIR drivers.</text>
+<rect x="25" y="120" width="1760" height="570" rx="14" fill="#fafbfc" stroke="#3d4654" stroke-width="2"/>
+<text x="39" y="144" font-size="16" font-weight="bold" fill="#3d4654">COMPUTE, SENSING AND ACTUATION</text>
+<rect x="25" y="715" width="1760" height="345" rx="14" fill="#fff6f6" stroke="#c62828" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="39" y="739" font-size="16" font-weight="bold" fill="#c62828">SAFETY CHAIN (independent of the Pi 5 software)</text>
+<path d="M265.0,215.0 L305.0,215.0 L305.0,220.0 L345.0,220.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M645.0,213.0 L780.0,213.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)" marker-start="url(#ah_info)"/>
+<path d="M925.0,575.0 L925.0,330.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M890.0,395.0 L921.0,395.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M890.0,485.0 L921.0,485.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M890.0,575.0 L921.0,575.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M960.0,395.0 L929.0,395.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M960.0,485.0 L929.0,485.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M960.0,575.0 L929.0,575.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1080.0,186.0 L1300.0,186.3" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1080.0,249.0 L1255.0,249.0 L1255.0,350.0 L1300.0,350.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1080.0,303.0 L1240.0,303.0 L1240.0,480.0 L1300.0,480.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1530.0,177.5 L1560.0,177.5 L1560.0,167.5 L1590.0,167.5" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M1530.0,227.0 L1560.0,227.0 L1560.0,242.5 L1590.0,242.5" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M1530.0,350.0 L1590.0,350.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M1530.0,480.0 L1590.0,480.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M1080.0,324.6 L1215.0,325.0 L1215.0,820.0 L1080.0,820.0" fill="none" stroke="#c62828" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8 6" marker-end="url(#ah_status)"/>
+<path d="M860.0,820.0 L810.0,820.0 L810.0,838.0 L760.0,838.0" fill="none" stroke="#c62828" stroke-width="3.6" stroke-linejoin="round" marker-end="url(#ah_safety)"/>
+<path d="M285.0,865.0 L352.5,865.0 L352.5,870.0 L420.0,870.0" fill="none" stroke="#c62828" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8 6" marker-end="url(#ah_status)"/>
+<path d="M760.0,806.0 L790.0,806.0 L790.0,750.0 L1280.0,750.0 L1280.0,820.0 L1300.0,820.0" fill="none" stroke="#c62828" stroke-width="3.6" stroke-linejoin="round" marker-end="url(#ah_safety)"/>
+<path d="M590.0,950.0 L590.0,1025.0 L1280.0,1025.0 L1280.0,970.0 L1300.0,970.0" fill="none" stroke="#c62828" stroke-width="3.6" stroke-linejoin="round" marker-end="url(#ah_safety)"/>
+<path d="M692.0,950.0 L692.0,1042.0 L1560.0,1042.0 L1560.0,280.0 L1484.0,280.0 L1484.0,260.0" fill="none" stroke="#c62828" stroke-width="3.6" stroke-linejoin="round" marker-end="url(#ah_safety)"/>
+<path d="M692.0,950.0 L692.0,1042.0 L1560.0,1042.0 L1560.0,420.0 L1484.0,420.0 L1484.0,400.0" fill="none" stroke="#c62828" stroke-width="3.6" stroke-linejoin="round" marker-end="url(#ah_safety)"/>
+<path d="M641.0,790.0 L641.0,728.0 L910.0,728.0 L910.0,330.0" fill="none" stroke="#c62828" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8 6" marker-end="url(#ah_status)"/>
+<path d="M460.8,790.0 L461.0,705.0 L300.0,705.0 L300.0,330.0 L435.0,330.0 L435.0,290.0" fill="none" stroke="#c62828" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8 6" marker-end="url(#ah_status)"/>
+<path d="M760.0,918.0 L810.0,918.0 L810.0,965.0 L860.0,965.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<rect x="45" y="165" width="220" height="100" rx="10" fill="#efe7fb" stroke="#7b4bc4" stroke-width="2.0"/>
+<text x="155.0" y="200.5" font-size="17" font-weight="bold" fill="#2b1856" text-anchor="middle">Camera Module 3 Wide</text>
+<text x="155.0" y="221.5" font-size="15" fill="#263040" text-anchor="middle">IMX708 12 MP</text>
+<text x="155.0" y="240.5" font-size="15" fill="#263040" text-anchor="middle">102 x 67 deg (datasheet)</text>
+<rect x="345" y="150" width="300" height="140" rx="10" fill="#e3f4ea" stroke="#1f8a4c" stroke-width="2.0"/>
+<text x="495.0" y="186.5" font-size="17" font-weight="bold" fill="#0f3a22" text-anchor="middle">Raspberry Pi 5, 8 GB</text>
+<text x="495.0" y="207.5" font-size="15" fill="#263040" text-anchor="middle">Raspberry Pi OS 64-bit</text>
+<text x="495.0" y="226.5" font-size="15" fill="#263040" text-anchor="middle">vision, EKF, state machine</text>
+<text x="495.0" y="245.5" font-size="15" fill="#263040" text-anchor="middle">5.1 V / 5 A input</text>
+<text x="495.0" y="264.5" font-size="15" fill="#263040" text-anchor="middle">2 x CSI-2, USB, UART, GPIO</text>
+<rect x="780" y="150" width="300" height="180" rx="10" fill="#e1f0f6" stroke="#1d7894" stroke-width="2.0"/>
+<text x="930.0" y="197.0" font-size="17" font-weight="bold" fill="#0b3240" text-anchor="middle">Motor-control MCU (PH)</text>
+<text x="930.0" y="218.0" font-size="15" fill="#263040" text-anchor="middle">RP2350 class (Pico 2)</text>
+<text x="930.0" y="237.0" font-size="15" fill="#263040" text-anchor="middle">PIO quadrature x2</text>
+<text x="930.0" y="256.0" font-size="15" fill="#263040" text-anchor="middle">PWM x4, I2C, SPI, ADC</text>
+<text x="930.0" y="275.0" font-size="15" fill="#263040" text-anchor="middle">UART to Pi 5</text>
+<text x="930.0" y="294.0" font-size="15" fill="#263040" text-anchor="middle">WDI out, e-stop input</text>
+<rect x="640" y="360" width="250" height="70" rx="10" fill="#efe7fb" stroke="#7b4bc4" stroke-width="2.0"/>
+<text x="765.0" y="390.0" font-size="17" font-weight="bold" fill="#2b1856" text-anchor="middle">IMU 9-DoF (PH)</text>
+<text x="765.0" y="411.0" font-size="15" fill="#263040" text-anchor="middle">BNO085 class, 400 Hz</text>
+<rect x="640" y="450" width="250" height="70" rx="10" fill="#efe7fb" stroke="#7b4bc4" stroke-width="2.0"/>
+<text x="765.0" y="480.0" font-size="17" font-weight="bold" fill="#2b1856" text-anchor="middle">Drive encoders L+R</text>
+<text x="765.0" y="501.0" font-size="15" fill="#263040" text-anchor="middle">Hall quadrature, A/B x2</text>
+<rect x="640" y="540" width="250" height="70" rx="10" fill="#efe7fb" stroke="#7b4bc4" stroke-width="2.0"/>
+<text x="765.0" y="570.0" font-size="17" font-weight="bold" fill="#2b1856" text-anchor="middle">Shell index Hall</text>
+<text x="765.0" y="591.0" font-size="15" fill="#263040" text-anchor="middle">magnet on ring gear</text>
+<rect x="960" y="360" width="230" height="70" rx="10" fill="#efe7fb" stroke="#7b4bc4" stroke-width="2.0"/>
+<text x="1075.0" y="390.0" font-size="17" font-weight="bold" fill="#2b1856" text-anchor="middle">Steering angle (PH)</text>
+<text x="1075.0" y="411.0" font-size="15" fill="#263040" text-anchor="middle">AS5600 class, I2C</text>
+<rect x="960" y="450" width="230" height="70" rx="10" fill="#fff4d6" stroke="#c98a00" stroke-width="2.0"/>
+<text x="1075.0" y="480.0" font-size="17" font-weight="bold" fill="#4a3300" text-anchor="middle">Bus V/I monitor (PH)</text>
+<text x="1075.0" y="501.0" font-size="15" fill="#263040" text-anchor="middle">INA228 class, I2C</text>
+<rect x="960" y="540" width="230" height="70" rx="10" fill="#fff4d6" stroke="#c98a00" stroke-width="2.0"/>
+<text x="1075.0" y="570.0" font-size="17" font-weight="bold" fill="#4a3300" text-anchor="middle">6S BMS</text>
+<text x="1075.0" y="591.0" font-size="15" fill="#263040" text-anchor="middle">fault flag (if exposed)</text>
+<rect x="1300" y="150" width="230" height="110" rx="10" fill="#e6eefb" stroke="#2b5cb8" stroke-width="2.0"/>
+<text x="1415.0" y="190.5" font-size="17" font-weight="bold" fill="#0e2350" text-anchor="middle">Dual drive driver (PH)</text>
+<text x="1415.0" y="211.5" font-size="15" fill="#263040" text-anchor="middle">Cytron MDD20A class</text>
+<text x="1415.0" y="230.5" font-size="15" fill="#263040" text-anchor="middle">6-30 V, 20 A per ch.</text>
+<rect x="1300" y="300" width="230" height="100" rx="10" fill="#e6eefb" stroke="#2b5cb8" stroke-width="2.0"/>
+<text x="1415.0" y="335.5" font-size="17" font-weight="bold" fill="#0e2350" text-anchor="middle">Steering driver (PH)</text>
+<text x="1415.0" y="356.5" font-size="15" fill="#263040" text-anchor="middle">Cytron MD10C class</text>
+<text x="1415.0" y="375.5" font-size="15" fill="#263040" text-anchor="middle">5-30 V, 13 A</text>
+<rect x="1300" y="440" width="230" height="80" rx="10" fill="#e6eefb" stroke="#2b5cb8" stroke-width="2.0"/>
+<text x="1415.0" y="475.0" font-size="17" font-weight="bold" fill="#0e2350" text-anchor="middle">Servo PWM out</text>
+<text x="1415.0" y="496.0" font-size="15" fill="#263040" text-anchor="middle">6 V rail after contactor</text>
+<rect x="1590" y="140" width="180" height="55" rx="10" fill="#e6eefb" stroke="#2b5cb8" stroke-width="2.0"/>
+<text x="1680.0" y="172.0" font-size="17" font-weight="bold" fill="#0e2350" text-anchor="middle">Gearmotor L</text>
+<rect x="1590" y="215" width="180" height="55" rx="10" fill="#e6eefb" stroke="#2b5cb8" stroke-width="2.0"/>
+<text x="1680.0" y="247.0" font-size="17" font-weight="bold" fill="#0e2350" text-anchor="middle">Gearmotor R</text>
+<rect x="1590" y="315" width="180" height="70" rx="10" fill="#e6eefb" stroke="#2b5cb8" stroke-width="2.0"/>
+<text x="1680.0" y="345.0" font-size="17" font-weight="bold" fill="#0e2350" text-anchor="middle">Steering worm motor</text>
+<text x="1680.0" y="366.0" font-size="15" fill="#263040" text-anchor="middle">self-locking</text>
+<rect x="1590" y="445" width="180" height="70" rx="10" fill="#e6eefb" stroke="#2b5cb8" stroke-width="2.0"/>
+<text x="1680.0" y="475.0" font-size="17" font-weight="bold" fill="#0e2350" text-anchor="middle">Camera pitch servo</text>
+<text x="1680.0" y="496.0" font-size="15" fill="#263040" text-anchor="middle">metal gear, 6 V</text>
+<rect x="45" y="810" width="240" height="110" rx="10" fill="#fde8e8" stroke="#c62828" stroke-width="2.6"/>
+<text x="165.0" y="850.5" font-size="17" font-weight="bold" fill="#5a0c0c" text-anchor="middle">Handheld e-stop TX</text>
+<text x="165.0" y="871.5" font-size="15" fill="#263040" text-anchor="middle">latching mushroom switch,</text>
+<text x="165.0" y="890.5" font-size="15" fill="#263040" text-anchor="middle">heartbeat 20 Hz</text>
+<rect x="420" y="790" width="340" height="160" rx="10" fill="#fde8e8" stroke="#c62828" stroke-width="2.6"/>
+<text x="590.0" y="836.5" font-size="17" font-weight="bold" fill="#5a0c0c" text-anchor="middle">Safety supervisor (PH)</text>
+<text x="590.0" y="857.5" font-size="15" fill="#263040" text-anchor="middle">independent MCU + 2.4 GHz RX</text>
+<text x="590.0" y="876.5" font-size="15" fill="#263040" text-anchor="middle">(ESP32-C3 class, ESP-NOW)</text>
+<text x="590.0" y="895.5" font-size="15" fill="#263040" text-anchor="middle">RUN only if heartbeat valid</text>
+<text x="590.0" y="914.5" font-size="15" fill="#263040" text-anchor="middle">AND WD_OK AND not latched</text>
+<rect x="860" y="780" width="220" height="80" rx="10" fill="#fde8e8" stroke="#c62828" stroke-width="2.6"/>
+<text x="970.0" y="815.0" font-size="17" font-weight="bold" fill="#5a0c0c" text-anchor="middle">Watchdog IC (PH)</text>
+<text x="970.0" y="836.0" font-size="15" fill="#263040" text-anchor="middle">TPS3823 class</text>
+<rect x="860" y="930" width="220" height="70" rx="10" fill="#fde8e8" stroke="#c62828" stroke-width="2.6"/>
+<text x="970.0" y="960.0" font-size="17" font-weight="bold" fill="#5a0c0c" text-anchor="middle">Status LED</text>
+<text x="970.0" y="981.0" font-size="15" fill="#263040" text-anchor="middle">left hub</text>
+<rect x="1300" y="780" width="230" height="80" rx="10" fill="#fde8e8" stroke="#c62828" stroke-width="2.6"/>
+<text x="1415.0" y="815.0" font-size="17" font-weight="bold" fill="#5a0c0c" text-anchor="middle">Contactor, NO</text>
+<text x="1415.0" y="836.0" font-size="15" fill="#263040" text-anchor="middle">24 V coil, 40 A</text>
+<rect x="1300" y="930" width="230" height="80" rx="10" fill="#fde8e8" stroke="#c62828" stroke-width="2.6"/>
+<text x="1415.0" y="965.0" font-size="17" font-weight="bold" fill="#5a0c0c" text-anchor="middle">Brake relays, changeover</text>
+<text x="1415.0" y="986.0" font-size="15" fill="#263040" text-anchor="middle">break-before-make + resistors</text>
+<rect x="280.0" y="189.5" width="50.0" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="305.0" y="207.5" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">CSI-2</text>
+<rect x="668.0" y="177.5" width="88.0" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="712.0" y="195.5" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">UART / USB</text>
+<rect x="1146.0" y="159.5" width="88.0" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1190.0" y="177.5" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">PWM+DIR x2</text>
+<rect x="1137.4" y="236.5" width="65.2" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1170.0" y="254.5" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">PWM+DIR</text>
+<rect x="1119.8" y="290.5" width="80.4" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1160.0" y="308.5" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">PWM 50 Hz</text>
+<rect x="1171.0" y="647.5" width="88.0" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1215.0" y="665.5" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">WDI pulses</text>
+<rect x="787.0" y="782.5" width="50.0" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="812.0" y="800.5" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">WD_OK</text>
+<rect x="311.8" y="843.0" width="80.4" height="44.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="352.0" y="861.0" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">2.4 GHz</text>
+<text x="352.0" y="880.0" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">heartbeat</text>
+<rect x="980.8" y="737.5" width="118.4" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1040.0" y="755.5" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">contactor coil</text>
+<rect x="896.0" y="1012.5" width="88.0" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="940.0" y="1030.5" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">brake coil</text>
+<rect x="1478.0" y="607.5" width="164.0" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1560.0" y="625.5" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">PWM gate off on STOP</text>
+<rect x="712.2" y="715.5" width="95.6" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="760.0" y="733.5" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">ESTOP_STATE</text>
+<rect x="225.6" y="507.5" width="148.8" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="300.0" y="525.5" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">ESTOP_STATE (GPIO)</text>
+<text x="925" y="640" font-size="14" fill="#3d4654" font-weight="normal" text-anchor="middle">shared sensor bus into the MCU</text>
+<line x1="40" y1="1100" x2="86" y2="1100" stroke="#3d4654" stroke-width="2.2"/>
+<text x="96" y="1105" font-size="15" fill="#333">signal / data</text>
+<line x1="360" y1="1100" x2="406" y2="1100" stroke="#c98a00" stroke-width="5.0"/>
+<text x="416" y="1105" font-size="15" fill="#333">motor power</text>
+<line x1="680" y1="1100" x2="726" y2="1100" stroke="#c62828" stroke-width="3.6"/>
+<text x="736" y="1105" font-size="15" fill="#333">safety output</text>
+<line x1="1000" y1="1100" x2="1046" y2="1100" stroke="#c62828" stroke-width="2.0" stroke-dasharray="8 6"/>
+<text x="1056" y="1105" font-size="15" fill="#333">heartbeat / status</text>
+</svg>

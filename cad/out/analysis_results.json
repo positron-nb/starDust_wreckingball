@@ -1,0 +1,885 @@
+{
+  "parameters": {
+    "d_min_rule": 609.6,
+    "d_max_rule": 762.0,
+    "protrusion_max_rule": 152.4,
+    "D_shell": 700.0,
+    "t_shell": 3.0,
+    "shell_tol": 7.0,
+    "r_pole_open": 65.0,
+    "band_w": 30.0,
+    "band_t": 5.0,
+    "n_keys": 4,
+    "tape_t": 0.35,
+    "tape_half_w": 100.0,
+    "hub_recess": 1.0,
+    "brg_id": 40.0,
+    "brg_od": 62.0,
+    "brg_w": 12.0,
+    "y_brg": 296.0,
+    "flange_r_out": 73.0,
+    "flange_sleeve_t": 3.0,
+    "hub_cap_r": 63.0,
+    "hub_cup_r": 61.0,
+    "hub_cup_wall": 4.0,
+    "hub_cup_floor_y": 312.0,
+    "hub_cap_inner_y": 337.0,
+    "axle_od": 30.0,
+    "axle_id": 24.0,
+    "axle_half_len": 312.0,
+    "box_x": 125.0,
+    "box_y": 90.0,
+    "box_z_top": 30.0,
+    "box_z_bot": -80.0,
+    "plate_t": 3.0,
+    "gear_m": 1.5,
+    "ring_teeth": 72,
+    "pinion_teeth": 18,
+    "gear_face": 12.0,
+    "y_gear_out": 296.0,
+    "motor_angle_deg": 50.0,
+    "motor_d": 42.0,
+    "motor_len": 145.0,
+    "motor_face_y": 278.0,
+    "motor_arm_t": 6.0,
+    "pivot_depth": 45.0,
+    "pivot_d": 12.0,
+    "beta_max_deg": 30.0,
+    "hanger_x": 100.0,
+    "hanger_t": 5.0,
+    "tray_z": -250.0,
+    "tray_t": 4.0,
+    "tray_half_y": 40.0,
+    "batt_l": 135.0,
+    "batt_w": 76.0,
+    "batt_h": 34.0,
+    "ballast_rho_in": 215.0,
+    "ballast_rho_out": 265.0,
+    "ballast_half_deg": 40.0,
+    "ballast_plate_t": 8.0,
+    "n_ballast": 4,
+    "cam_pos": [
+      158.4,
+      50.0,
+      22.0
+    ],
+    "cam_down_deg": 12.0,
+    "cam_hfov": 102.0,
+    "cam_vfov": 67.0,
+    "min_moving_clearance": 8.0,
+    "min_static_gap": 1.0,
+    "c_rr": 0.03,
+    "gear_eff": 0.95,
+    "v_max_target": 2.0,
+    "R_o": 350.0,
+    "R_i": 347.0,
+    "band_r_out": 346.67564090948184,
+    "gear_center_dist": 67.5,
+    "gear_ratio": 4.0
+  },
+  "mass": {
+    "total_kg": 17.003,
+    "cg_mm": [
+      1.38,
+      -0.4,
+      -87.22
+    ],
+    "by_body": {
+      "shell": {
+        "mass_kg": 6.856,
+        "cg_mm": [
+          0.0,
+          -0.01,
+          0.0
+        ]
+      },
+      "stator": {
+        "mass_kg": 4.807,
+        "cg_mm": [
+          4.9,
+          -1.39,
+          -24.34
+        ]
+      },
+      "bob": {
+        "mass_kg": 5.339,
+        "cg_mm": [
+          0.0,
+          0.0,
+          -255.84
+        ]
+      }
+    },
+    "n_parts": 68,
+    "n_placeholder": 27,
+    "placeholder_mass_kg": 3.029
+  },
+  "dimensions": {
+    "rule_d_min_mm": 609.6,
+    "rule_d_max_mm": 762.0,
+    "rule_protrusion_max_mm": 152.4,
+    "nominal_shell_od_mm": 700.0,
+    "caliper_max_mm": 700.7,
+    "caliper_min_mm": 696.3,
+    "caliper_max_ft": 2.2989,
+    "caliper_min_ft": 2.2844,
+    "caliper_x_mm": 700.35,
+    "caliper_y_mm": 697.54,
+    "caliper_z_mm": 700.7,
+    "margin_to_upper_mm": 61.3,
+    "margin_to_lower_mm": 86.7,
+    "tolerance_case_max_mm": 707.7,
+    "tolerance_case_min_mm": 689.3,
+    "tape_protrusion_mm": 0.35,
+    "max_non_skin_protrusion_mm": -1.0,
+    "max_non_skin_protrusion_part": "ST-02",
+    "external_sensors_or_mounts": 0,
+    "strictly_within_rule": true,
+    "strictly_within_rule_with_tolerance": true,
+    "protrusion_rule_ok": true
+  },
+  "drive_feasibility": {
+    "assumptions": {
+      "c_rr": 0.03,
+      "gear_ratio": 4.0,
+      "gear_eff": 0.95,
+      "rolling_radius_m": 0.35035000000000005,
+      "g": 9.81,
+      "v_target_mps": 2.0,
+      "note": "quasi-static; ignores pendulum dynamics, slip, ramp-entry transition and shell deformation. Phase 2 replaces these with a dynamic model."
+    },
+    "total_mass_kg": 17.003,
+    "pendulum_first_moment_kgm": 1.4832,
+    "M_times_R_kgm": 5.9569,
+    "climb_index_mpe_over_MR": 0.249,
+    "alpha_max_deg": {
+      "phi_45": 8.42,
+      "phi_60": 10.73,
+      "phi_75": 12.19,
+      "phi_90": 12.69
+    },
+    "alpha_max_no_rr_deg": {
+      "phi_45": 10.14,
+      "phi_60": 12.45,
+      "phi_75": 13.92,
+      "phi_90": 14.42
+    },
+    "motor_operating_points": {
+      "cruise": {
+        "torque_Nm": 0.23,
+        "rpm": 218.0,
+        "note": "flat, v_target"
+      },
+      "climb": {
+        "torque_Nm": 1.66,
+        "rpm": 55.0,
+        "note": "steady climb at the 60 deg limit (10.73 deg) at 0.5 m/s (assumed)"
+      },
+      "peak": {
+        "torque_Nm": 1.91,
+        "note": "pendulum horizontal; short-term only"
+      },
+      "V_min": 18.0,
+      "V_rated": 24.0,
+      "stall_rated_Nm": 4.0,
+      "no_load_rpm_needed_at_Vmin": 236.0,
+      "no_load_rpm_spec_at_rated": 320,
+      "stall_at_Vmin_Nm": 3.0,
+      "climb_speed_at_Vmin_rpm": 107.0
+    },
+    "launch_accel_mps2": 1.44,
+    "max_reaction_torque_shell_Nm": 14.55,
+    "torque_table": [
+      {
+        "alpha_deg": 5,
+        "shell_torque_Nm": 6.84,
+        "torque_per_motor_Nm": 0.9,
+        "pendulum_angle_deg": 28.0,
+        "quasi_static_ok_phi_le_60": true
+      },
+      {
+        "alpha_deg": 8,
+        "shell_torque_Nm": 9.87,
+        "torque_per_motor_Nm": 1.3,
+        "pendulum_angle_deg": 42.7,
+        "quasi_static_ok_phi_le_60": true
+      },
+      {
+        "alpha_deg": 10,
+        "shell_torque_Nm": 11.87,
+        "torque_per_motor_Nm": 1.56,
+        "pendulum_angle_deg": 54.7,
+        "quasi_static_ok_phi_le_60": true
+      },
+      {
+        "alpha_deg": 12,
+        "shell_torque_Nm": 13.86,
+        "torque_per_motor_Nm": 1.82,
+        "pendulum_angle_deg": 72.3,
+        "quasi_static_ok_phi_le_60": false
+      },
+      {
+        "alpha_deg": 14,
+        "shell_torque_Nm": 15.84,
+        "torque_per_motor_Nm": 2.08,
+        "pendulum_angle_deg": null,
+        "quasi_static_ok_phi_le_60": false
+      },
+      {
+        "alpha_deg": 16,
+        "shell_torque_Nm": 17.79,
+        "torque_per_motor_Nm": 2.34,
+        "pendulum_angle_deg": null,
+        "quasi_static_ok_phi_le_60": false
+      },
+      {
+        "alpha_deg": 18,
+        "shell_torque_Nm": 19.73,
+        "torque_per_motor_Nm": 2.6,
+        "pendulum_angle_deg": null,
+        "quasi_static_ok_phi_le_60": false
+      },
+      {
+        "alpha_deg": 20,
+        "shell_torque_Nm": 21.63,
+        "torque_per_motor_Nm": 2.85,
+        "pendulum_angle_deg": null,
+        "quasi_static_ok_phi_le_60": false
+      },
+      {
+        "alpha_deg": 25,
+        "shell_torque_Nm": 26.29,
+        "torque_per_motor_Nm": 3.46,
+        "pendulum_angle_deg": null,
+        "quasi_static_ok_phi_le_60": false
+      },
+      {
+        "alpha_deg": 30,
+        "shell_torque_Nm": 30.74,
+        "torque_per_motor_Nm": 4.04,
+        "pendulum_angle_deg": null,
+        "quasi_static_ok_phi_le_60": false
+      }
+    ],
+    "shell_rpm_at_v_target": 54.5,
+    "motor_output_rpm_at_v_target": 218.1,
+    "M_eff_kg": 21.57,
+    "momentum_table_0p8ft_ramp": [
+      {
+        "alpha_deg": 15,
+        "ramp_length_m": 0.942,
+        "approach_speed_mps": 1.03
+      },
+      {
+        "alpha_deg": 20,
+        "ramp_length_m": 0.713,
+        "approach_speed_mps": 1.31
+      },
+      {
+        "alpha_deg": 25,
+        "ramp_length_m": 0.577,
+        "approach_speed_mps": 1.45
+      },
+      {
+        "alpha_deg": 30,
+        "ramp_length_m": 0.488,
+        "approach_speed_mps": 1.53
+      },
+      {
+        "alpha_deg": 35,
+        "ramp_length_m": 0.425,
+        "approach_speed_mps": 1.59
+      }
+    ],
+    "quasi_static_lip_height_mm": 11.0,
+    "stator_rest_pitch_deg": 0.91
+  },
+  "steering": {
+    "table": [
+      {
+        "beta_deg": -30,
+        "lean_gamma_deg": -23.15
+      },
+      {
+        "beta_deg": -20,
+        "lean_gamma_deg": -15.48
+      },
+      {
+        "beta_deg": -10,
+        "lean_gamma_deg": -7.85
+      },
+      {
+        "beta_deg": 0,
+        "lean_gamma_deg": -0.26
+      },
+      {
+        "beta_deg": 10,
+        "lean_gamma_deg": 7.34
+      },
+      {
+        "beta_deg": 20,
+        "lean_gamma_deg": 14.97
+      },
+      {
+        "beta_deg": 30,
+        "lean_gamma_deg": 22.66
+      }
+    ],
+    "note": "static lean of axle/shell with the CG directly below the centre; turning radius vs speed is a Phase 2 dynamic result"
+  },
+  "cg_envelope": {
+    "points": [
+      {
+        "phi_deg": -30,
+        "beta_deg": -30,
+        "cg_mm": [
+          40.37,
+          -33.5,
+          -67.16
+        ]
+      },
+      {
+        "phi_deg": -30,
+        "beta_deg": 0,
+        "cg_mm": [
+          44.81,
+          -0.4,
+          -74.83
+        ]
+      },
+      {
+        "phi_deg": -30,
+        "beta_deg": 30,
+        "cg_mm": [
+          40.37,
+          32.71,
+          -67.16
+        ]
+      },
+      {
+        "phi_deg": 0,
+        "beta_deg": -30,
+        "cg_mm": [
+          1.38,
+          -33.5,
+          -78.35
+        ]
+      },
+      {
+        "phi_deg": 0,
+        "beta_deg": 0,
+        "cg_mm": [
+          1.38,
+          -0.4,
+          -87.22
+        ]
+      },
+      {
+        "phi_deg": 0,
+        "beta_deg": 30,
+        "cg_mm": [
+          1.38,
+          32.71,
+          -78.35
+        ]
+      },
+      {
+        "phi_deg": 30,
+        "beta_deg": -30,
+        "cg_mm": [
+          -37.97,
+          -33.5,
+          -68.54
+        ]
+      },
+      {
+        "phi_deg": 30,
+        "beta_deg": 0,
+        "cg_mm": [
+          -42.41,
+          -0.4,
+          -76.21
+        ]
+      },
+      {
+        "phi_deg": 30,
+        "beta_deg": 30,
+        "cg_mm": [
+          -37.97,
+          32.71,
+          -68.54
+        ]
+      }
+    ]
+  },
+  "ballast_sweep": [
+    {
+      "n_plates": 2,
+      "mass_kg": 14.9,
+      "cg_z_mm": -61.9,
+      "mpe_kgm": 0.922,
+      "alpha_max_phi60_deg": 7.08,
+      "alpha_max_phi90_deg": 8.45
+    },
+    {
+      "n_plates": 3,
+      "mass_kg": 15.95,
+      "cg_z_mm": -75.4,
+      "mpe_kgm": 1.207,
+      "alpha_max_phi60_deg": 9.06,
+      "alpha_max_phi90_deg": 10.75
+    },
+    {
+      "n_plates": 4,
+      "mass_kg": 17.0,
+      "cg_z_mm": -87.2,
+      "mpe_kgm": 1.483,
+      "alpha_max_phi60_deg": 10.73,
+      "alpha_max_phi90_deg": 12.69
+    },
+    {
+      "n_plates": 5,
+      "mass_kg": 18.05,
+      "cg_z_mm": -97.7,
+      "mpe_kgm": 1.768,
+      "alpha_max_phi60_deg": 12.28,
+      "alpha_max_phi90_deg": 14.5
+    },
+    {
+      "n_plates": 6,
+      "mass_kg": 19.11,
+      "cg_z_mm": -107.0,
+      "mpe_kgm": 2.045,
+      "alpha_max_phi60_deg": 13.61,
+      "alpha_max_phi90_deg": 16.06
+    }
+  ],
+  "max_radius_moving": {
+    "-30": {
+      "max_radius_mm": 321.6,
+      "part": "BL-01"
+    },
+    "0": {
+      "max_radius_mm": 321.7,
+      "part": "BL-01"
+    },
+    "30": {
+      "max_radius_mm": 321.6,
+      "part": "BL-01"
+    }
+  },
+  "swept_clearance": {
+    "per_beta": {
+      "-30": [
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "ST-02",
+          "shell_part": "SH-01"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "ST-03",
+          "shell_part": "SH-02"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-01",
+          "shell_part": "SH-10"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-02",
+          "shell_part": "SH-11"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-03",
+          "shell_part": "SH-10"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-04",
+          "shell_part": "SH-11"
+        },
+        {
+          "clearance_mm": 4.0,
+          "required_mm": 1.0,
+          "moving": "ST-02",
+          "shell_part": "SH-10"
+        },
+        {
+          "clearance_mm": 4.0,
+          "required_mm": 1.0,
+          "moving": "ST-03",
+          "shell_part": "SH-11"
+        }
+      ],
+      "-15": [
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "ST-02",
+          "shell_part": "SH-01"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "ST-03",
+          "shell_part": "SH-02"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-01",
+          "shell_part": "SH-10"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-02",
+          "shell_part": "SH-11"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-03",
+          "shell_part": "SH-10"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-04",
+          "shell_part": "SH-11"
+        },
+        {
+          "clearance_mm": 4.0,
+          "required_mm": 1.0,
+          "moving": "ST-02",
+          "shell_part": "SH-10"
+        },
+        {
+          "clearance_mm": 4.0,
+          "required_mm": 1.0,
+          "moving": "ST-03",
+          "shell_part": "SH-11"
+        }
+      ],
+      "0": [
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "ST-02",
+          "shell_part": "SH-01"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "ST-03",
+          "shell_part": "SH-02"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-01",
+          "shell_part": "SH-10"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-02",
+          "shell_part": "SH-11"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-03",
+          "shell_part": "SH-10"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-04",
+          "shell_part": "SH-11"
+        },
+        {
+          "clearance_mm": 4.0,
+          "required_mm": 1.0,
+          "moving": "ST-02",
+          "shell_part": "SH-10"
+        },
+        {
+          "clearance_mm": 4.0,
+          "required_mm": 1.0,
+          "moving": "ST-03",
+          "shell_part": "SH-11"
+        }
+      ],
+      "15": [
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "ST-02",
+          "shell_part": "SH-01"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "ST-03",
+          "shell_part": "SH-02"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-01",
+          "shell_part": "SH-10"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-02",
+          "shell_part": "SH-11"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-03",
+          "shell_part": "SH-10"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-04",
+          "shell_part": "SH-11"
+        },
+        {
+          "clearance_mm": 4.0,
+          "required_mm": 1.0,
+          "moving": "ST-02",
+          "shell_part": "SH-10"
+        },
+        {
+          "clearance_mm": 4.0,
+          "required_mm": 1.0,
+          "moving": "ST-03",
+          "shell_part": "SH-11"
+        }
+      ],
+      "30": [
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "ST-02",
+          "shell_part": "SH-01"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "ST-03",
+          "shell_part": "SH-02"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-01",
+          "shell_part": "SH-10"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-02",
+          "shell_part": "SH-11"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-03",
+          "shell_part": "SH-10"
+        },
+        {
+          "clearance_mm": 2.0,
+          "required_mm": 1.0,
+          "moving": "DR-04",
+          "shell_part": "SH-11"
+        },
+        {
+          "clearance_mm": 4.0,
+          "required_mm": 1.0,
+          "moving": "ST-02",
+          "shell_part": "SH-10"
+        },
+        {
+          "clearance_mm": 4.0,
+          "required_mm": 1.0,
+          "moving": "ST-03",
+          "shell_part": "SH-11"
+        }
+      ]
+    },
+    "worst_margin": {
+      "margin_mm": 1.0,
+      "clearance_mm": 2.0,
+      "required_mm": 1.0,
+      "beta_deg": -30,
+      "moving": "ST-02",
+      "moving_name": "Polar hub L (non-rotating, flush)",
+      "shell_part": "SH-01",
+      "shell_name": "Shell hemisphere L (clear PC)"
+    },
+    "skin_requirement_mm": 8.0,
+    "polar_requirement_mm": 1.0,
+    "min_frame_or_bob_to_skin_mm": 19.98,
+    "min_frame_or_bob_to_skin_pair": "BL-01 vs SH-03 at beta 0",
+    "pass": true
+  },
+  "camera_fov": {
+    "camera_pos_mm": [
+      158.9,
+      50.0,
+      22.0
+    ],
+    "look_down_deg": 12.0,
+    "hfov_deg": 102.0,
+    "vfov_deg": 67.0,
+    "rays": 9216,
+    "blocked_by_internal_parts_pct": 0.0,
+    "blockers": {},
+    "seam_band_pct_of_image": 6.84,
+    "seam_band_azimuth_deg": [
+      -21.9,
+      -10.6
+    ],
+    "window_y_range_mm": [
+      -142.6,
+      202.4
+    ],
+    "window_z_range_mm": [
+      -137.8,
+      89.8
+    ],
+    "max_incidence_deg": 28.3,
+    "nearest_visible_floor_ahead_of_centre_mm": 530.6,
+    "nearest_visible_floor_ahead_of_shell_mm": 180.6,
+    "horizon_in_view": true,
+    "pass": true
+  },
+  "camera_pose_sweep": {
+    "states": [
+      {
+        "beta_deg": -30,
+        "cam_down_deg": 0,
+        "blocked_pct": 0.0,
+        "seam_pct": 7.13
+      },
+      {
+        "beta_deg": -30,
+        "cam_down_deg": 12,
+        "blocked_pct": 0.0,
+        "seam_pct": 6.84
+      },
+      {
+        "beta_deg": -30,
+        "cam_down_deg": 24,
+        "blocked_pct": 0.0,
+        "seam_pct": 6.73
+      },
+      {
+        "beta_deg": 0,
+        "cam_down_deg": 0,
+        "blocked_pct": 0.0,
+        "seam_pct": 7.13
+      },
+      {
+        "beta_deg": 0,
+        "cam_down_deg": 12,
+        "blocked_pct": 0.0,
+        "seam_pct": 6.84
+      },
+      {
+        "beta_deg": 0,
+        "cam_down_deg": 24,
+        "blocked_pct": 0.0,
+        "seam_pct": 6.73
+      },
+      {
+        "beta_deg": 30,
+        "cam_down_deg": 0,
+        "blocked_pct": 0.0,
+        "seam_pct": 7.13
+      },
+      {
+        "beta_deg": 30,
+        "cam_down_deg": 12,
+        "blocked_pct": 0.0,
+        "seam_pct": 6.84
+      },
+      {
+        "beta_deg": 30,
+        "cam_down_deg": 24,
+        "blocked_pct": 0.0,
+        "seam_pct": 6.73
+      }
+    ],
+    "max_blocked_pct": 0.0,
+    "note": "the stator only pitches about the axle (Y), the same axis the shell turns about, so the equatorial seam band (plane y=0) projects to a fixed image region for any shell rotation"
+  },
+  "envelopes": {
+    "EV-01": {
+      "name": "Battery removal path (after R hemisphere removed)",
+      "obstructions": [],
+      "clear": true
+    },
+    "EV-02": {
+      "name": "Preload-bolt socket access (outside right hub)",
+      "obstructions": [],
+      "clear": true
+    }
+  },
+  "clash": {
+    "states": [
+      {
+        "phi_deg": 0,
+        "beta_deg": 0,
+        "pairs": 2278,
+        "bbox_overlaps_tested": 194
+      },
+      {
+        "phi_deg": 0,
+        "beta_deg": 30,
+        "pairs": 2278,
+        "bbox_overlaps_tested": 193
+      },
+      {
+        "phi_deg": 0,
+        "beta_deg": -30,
+        "pairs": 2278,
+        "bbox_overlaps_tested": 192
+      },
+      {
+        "phi_deg": 60,
+        "beta_deg": 0,
+        "pairs": 2278,
+        "bbox_overlaps_tested": 219
+      },
+      {
+        "phi_deg": -60,
+        "beta_deg": 0,
+        "pairs": 2278,
+        "bbox_overlaps_tested": 221
+      },
+      {
+        "phi_deg": 35,
+        "beta_deg": 30,
+        "pairs": 2278,
+        "bbox_overlaps_tested": 238
+      }
+    ],
+    "clashes": [],
+    "pass": true
+  }
+}

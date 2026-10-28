@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1810" height="1160" viewBox="0 0 1810 1160" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="ah_info" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3d4654"/></marker>
+<marker id="ah_info2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3d4654"/></marker>
+<marker id="ah_power" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c98a00"/></marker>
+<marker id="ah_logic" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f8a4c"/></marker>
+<marker id="ah_safety" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c62828"/></marker>
+<marker id="ah_status" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c62828"/></marker>
+<marker id="ah_dev" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c8c8c"/></marker>
+<marker id="ah_charge" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c8c8c"/></marker>
+</defs>
+<rect x="0" y="0" width="1810" height="1160" fill="#ffffff"/>
+<text x="24" y="44" font-size="30" font-weight="bold" fill="#1b2230">WB-700 - system block diagram (Phase 1)</text>
+<text x="24" y="76" font-size="17" fill="#555d6b">Camera -&gt; image processing -&gt; navigation + state machine -&gt; motion commands -&gt; motor-control MCU -&gt; drivers -&gt; internal drive actuators.</text>
+<text x="24" y="98" font-size="17" fill="#555d6b">The red safety path is hardware and independent of the autonomy software. No offboard processing or remote driving during a run.</text>
+<rect x="1025" y="125" width="520" height="147" rx="14" fill="#f8f4fd" stroke="#7b4bc4" stroke-width="2"/>
+<text x="1039" y="149" font-size="16" font-weight="bold" fill="#7b4bc4">SUPPLEMENTARY INTERNAL SENSORS (stabilisation)</text>
+<rect x="25" y="290" width="215" height="188" rx="14" fill="#f8f4fd" stroke="#7b4bc4" stroke-width="2"/>
+<text x="39" y="314" font-size="16" font-weight="bold" fill="#7b4bc4">PRIMARY SENSOR</text>
+<rect x="265" y="290" width="747" height="350" rx="14" fill="#f3fbf6" stroke="#1f8a4c" stroke-width="2"/>
+<text x="279" y="314" font-size="16" font-weight="bold" fill="#1f8a4c">ONBOARD COMPUTER: Raspberry Pi 5 (all navigation, no offboard processing)</text>
+<rect x="1330" y="290" width="455" height="188" rx="14" fill="#f3f6fd" stroke="#2b5cb8" stroke-width="2"/>
+<text x="1344" y="314" font-size="16" font-weight="bold" fill="#2b5cb8">DRIVERS + INTERNAL DRIVE ACTUATORS</text>
+<rect x="25" y="665" width="1275" height="157" rx="14" fill="#fffaf0" stroke="#c98a00" stroke-width="2"/>
+<text x="39" y="689" font-size="16" font-weight="bold" fill="#c98a00">ONBOARD POWER (battery only, no tether)</text>
+<rect x="25" y="862" width="1760" height="180" rx="14" fill="#fff6f6" stroke="#c62828" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="39" y="886" font-size="16" font-weight="bold" fill="#c62828">INDEPENDENT SAFETY PATH (hardware, outside the autonomy software)</text>
+<path d="M225.0,390.0 L285.0,390.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M500.0,390.0 L535.0,390.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M750.0,390.0 L785.0,390.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M995.0,390.0 L1060.0,390.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1285.0,390.0 L1345.0,390.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1545.0,390.0 L1580.0,390.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M392.5,455.0 L392.5,490.0 L485.0,490.0 L485.0,525.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M615.0,525.0 L615.0,490.0 L642.5,490.0 L642.5,455.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1105.0,455.0 L1105.0,570.0 L680.0,570.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1115.0,255.0 L1115.0,300.0 L1105.0,300.0 L1105.0,325.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1285.0,255.0 L1285.0,290.0 L1172.5,290.0 L1172.5,325.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1455.0,255.0 L1455.0,280.0 L1240.0,280.0 L1240.0,325.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M235.0,755.0 L285.0,755.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M480.0,755.0 L530.0,755.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M720.0,755.0 L775.0,755.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M885.0,705.0 L885.0,640.0 L885.0,640.0" fill="none" stroke="#1f8a4c" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#ah_logic)"/>
+<path d="M995.0,735.0 L1022.0,735.0 L1022.0,478.0 L1082.5,478.0 L1082.5,455.0" fill="none" stroke="#1f8a4c" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#ah_logic)"/>
+<path d="M625.0,805.0 L625.0,838.0 L1150.0,838.0 L1150.0,805.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M1285.0,755.0 L1445.0,755.0 L1445.0,455.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M270.0,960.0 L420.0,960.0" fill="none" stroke="#c62828" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8 6" marker-end="url(#ah_status)"/>
+<path d="M1195.0,455.0 L1195.0,650.0 L1040.0,650.0 L1040.0,875.0 L911.0,875.0 L911.0,905.0" fill="none" stroke="#c62828" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8 6" marker-end="url(#ah_status)"/>
+<path d="M785.0,960.0 L720.0,960.0" fill="none" stroke="#c62828" stroke-width="3.6" stroke-linejoin="round" marker-end="url(#ah_safety)"/>
+<path d="M570.0,1015.0 L570.0,1030.0 L1240.0,1030.0 L1240.0,805.0" fill="none" stroke="#c62828" stroke-width="3.6" stroke-linejoin="round" marker-end="url(#ah_safety)"/>
+<path d="M675.0,905.0 L675.0,884.0 L1445.0,884.0 L1445.0,905.0" fill="none" stroke="#c62828" stroke-width="3.6" stroke-linejoin="round" marker-end="url(#ah_safety)"/>
+<path d="M510.0,905.0 L510.0,852.0 L1315.0,852.0 L1315.0,490.0 L1375.0,490.0 L1375.0,455.0" fill="none" stroke="#c62828" stroke-width="3.6" stroke-linejoin="round" marker-end="url(#ah_safety)"/>
+<path d="M1545.0,960.0 L1676.0,960.0 L1676.0,455.0" fill="none" stroke="#c62828" stroke-width="3.6" stroke-linejoin="round" marker-end="url(#ah_safety)"/>
+<path d="M504.9,905.0 L504.9,640.0 L505.0,640.0" fill="none" stroke="#c62828" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8 6" marker-end="url(#ah_status)"/>
+<path d="M299.9,235.0 L299.9,290.0 L300.0,290.0" fill="none" stroke="#8c8c8c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4 5"/>
+<rect x="40" y="135" width="380" height="100" rx="10" fill="#f4f4f4" stroke="#9a9a9a" stroke-width="2.0" stroke-dasharray="6 5"/>
+<text x="230.0" y="170.5" font-size="17" font-weight="bold" fill="#555555" text-anchor="middle">Development laptop</text>
+<text x="230.0" y="191.5" font-size="15" fill="#263040" text-anchor="middle">parameters + logs BEFORE the run only;</text>
+<text x="230.0" y="210.5" font-size="15" fill="#263040" text-anchor="middle">no link during the run</text>
+<rect x="1040" y="165" width="150" height="90" rx="10" fill="#efe7fb" stroke="#7b4bc4" stroke-width="2.0"/>
+<text x="1115.0" y="195.5" font-size="17" font-weight="bold" fill="#2b1856" text-anchor="middle">IMU 9-DoF</text>
+<text x="1115.0" y="216.5" font-size="15" fill="#263040" text-anchor="middle">stator pitch, roll,</text>
+<text x="1115.0" y="235.5" font-size="15" fill="#263040" text-anchor="middle">yaw rate</text>
+<rect x="1210" y="165" width="150" height="90" rx="10" fill="#efe7fb" stroke="#7b4bc4" stroke-width="2.0"/>
+<text x="1285.0" y="195.5" font-size="17" font-weight="bold" fill="#2b1856" text-anchor="middle">Encoders</text>
+<text x="1285.0" y="216.5" font-size="15" fill="#263040" text-anchor="middle">2 drive motors</text>
+<text x="1285.0" y="235.5" font-size="15" fill="#263040" text-anchor="middle">+ shell index</text>
+<rect x="1380" y="165" width="150" height="90" rx="10" fill="#efe7fb" stroke="#7b4bc4" stroke-width="2.0"/>
+<text x="1455.0" y="195.5" font-size="17" font-weight="bold" fill="#2b1856" text-anchor="middle">Steering angle</text>
+<text x="1455.0" y="216.5" font-size="15" fill="#263040" text-anchor="middle">magnetic sensor</text>
+<text x="1455.0" y="235.5" font-size="15" fill="#263040" text-anchor="middle">on bob pivot</text>
+<rect x="40" y="325" width="185" height="130" rx="10" fill="#efe7fb" stroke="#7b4bc4" stroke-width="2.0"/>
+<text x="132.5" y="356.5" font-size="17" font-weight="bold" fill="#2b1856" text-anchor="middle">Camera Module 3</text>
+<text x="132.5" y="377.5" font-size="15" fill="#263040" text-anchor="middle">Wide, 102 x 67 deg</text>
+<text x="132.5" y="396.5" font-size="15" fill="#263040" text-anchor="middle">PRIMARY sensor:</text>
+<text x="132.5" y="415.5" font-size="15" fill="#263040" text-anchor="middle">path tracking +</text>
+<text x="132.5" y="434.5" font-size="15" fill="#263040" text-anchor="middle">gate identification</text>
+<rect x="285" y="325" width="215" height="130" rx="10" fill="#e3f4ea" stroke="#1f8a4c" stroke-width="2.0"/>
+<text x="392.5" y="356.5" font-size="17" font-weight="bold" fill="#0f3a22" text-anchor="middle">Image processing</text>
+<text x="392.5" y="377.5" font-size="15" fill="#263040" text-anchor="middle">cone + gate detection</text>
+<text x="392.5" y="396.5" font-size="15" fill="#263040" text-anchor="middle">(yellow left / red right)</text>
+<text x="392.5" y="415.5" font-size="15" fill="#263040" text-anchor="middle">seam mask, ground</text>
+<text x="392.5" y="434.5" font-size="15" fill="#263040" text-anchor="middle">projection</text>
+<rect x="535" y="325" width="215" height="130" rx="10" fill="#e3f4ea" stroke="#1f8a4c" stroke-width="2.0"/>
+<text x="642.5" y="356.5" font-size="17" font-weight="bold" fill="#0f3a22" text-anchor="middle">Autonomous</text>
+<text x="642.5" y="377.5" font-size="15" fill="#263040" text-anchor="middle">navigation +</text>
+<text x="642.5" y="396.5" font-size="15" fill="#263040" text-anchor="middle">course state machine,</text>
+<text x="642.5" y="415.5" font-size="15" fill="#263040" text-anchor="middle">sector speed profiles,</text>
+<text x="642.5" y="434.5" font-size="15" fill="#263040" text-anchor="middle">pendulum timing</text>
+<rect x="785" y="325" width="210" height="130" rx="10" fill="#e3f4ea" stroke="#1f8a4c" stroke-width="2.0"/>
+<text x="890.0" y="366.0" font-size="17" font-weight="bold" fill="#0f3a22" text-anchor="middle">Motion + steering</text>
+<text x="890.0" y="387.0" font-size="15" fill="#263040" text-anchor="middle">commands</text>
+<text x="890.0" y="406.0" font-size="15" fill="#263040" text-anchor="middle">v_ref, lean_ref,</text>
+<text x="890.0" y="425.0" font-size="15" fill="#263040" text-anchor="middle">camera pitch_ref</text>
+<rect x="1060" y="325" width="225" height="130" rx="10" fill="#e1f0f6" stroke="#1d7894" stroke-width="2.0"/>
+<text x="1172.5" y="356.5" font-size="17" font-weight="bold" fill="#0b3240" text-anchor="middle">Motor-control MCU</text>
+<text x="1172.5" y="377.5" font-size="15" fill="#263040" text-anchor="middle">RP2350 class, 500 Hz:</text>
+<text x="1172.5" y="396.5" font-size="15" fill="#263040" text-anchor="middle">speed + pendulum damping,</text>
+<text x="1172.5" y="415.5" font-size="15" fill="#263040" text-anchor="middle">steering angle, camera</text>
+<text x="1172.5" y="434.5" font-size="15" fill="#263040" text-anchor="middle">stabiliser, cmd time-out</text>
+<rect x="1345" y="325" width="200" height="130" rx="10" fill="#e6eefb" stroke="#2b5cb8" stroke-width="2.0"/>
+<text x="1445.0" y="366.0" font-size="17" font-weight="bold" fill="#0e2350" text-anchor="middle">Motor drivers</text>
+<text x="1445.0" y="387.0" font-size="15" fill="#263040" text-anchor="middle">dual drive 20 A/ch</text>
+<text x="1445.0" y="406.0" font-size="15" fill="#263040" text-anchor="middle">+ steering driver</text>
+<text x="1445.0" y="425.0" font-size="15" fill="#263040" text-anchor="middle">(PWM/DIR inputs only)</text>
+<rect x="1580" y="325" width="192" height="130" rx="10" fill="#e6eefb" stroke="#2b5cb8" stroke-width="2.0"/>
+<text x="1676.0" y="356.5" font-size="17" font-weight="bold" fill="#0e2350" text-anchor="middle">Drive actuators</text>
+<text x="1676.0" y="377.5" font-size="15" fill="#263040" text-anchor="middle">2 gearmotors -&gt; ring</text>
+<text x="1676.0" y="396.5" font-size="15" fill="#263040" text-anchor="middle">gears -&gt; SHELL ROLLS;</text>
+<text x="1676.0" y="415.5" font-size="15" fill="#263040" text-anchor="middle">worm motor tilts bob;</text>
+<text x="1676.0" y="434.5" font-size="15" fill="#263040" text-anchor="middle">camera pitch servo</text>
+<rect x="420" y="525" width="260" height="90" rx="10" fill="#e3f4ea" stroke="#1f8a4c" stroke-width="2.0"/>
+<text x="550.0" y="555.5" font-size="17" font-weight="bold" fill="#0f3a22" text-anchor="middle">State estimation (EKF)</text>
+<text x="550.0" y="576.5" font-size="15" fill="#263040" text-anchor="middle">distance, lateral offset,</text>
+<text x="550.0" y="595.5" font-size="15" fill="#263040" text-anchor="middle">heading, speed, pitch</text>
+<rect x="40" y="705" width="195" height="100" rx="10" fill="#fff4d6" stroke="#c98a00" stroke-width="2.0"/>
+<text x="137.5" y="740.5" font-size="17" font-weight="bold" fill="#4a3300" text-anchor="middle">Battery 6S1P Li-ion</text>
+<text x="137.5" y="761.5" font-size="15" fill="#263040" text-anchor="middle">21.6 V nom., ~97 Wh</text>
+<text x="137.5" y="780.5" font-size="15" fill="#263040" text-anchor="middle">BMS: LVC, OC, SC, temp</text>
+<rect x="285" y="705" width="195" height="100" rx="10" fill="#fde8e8" stroke="#c62828" stroke-width="2.6"/>
+<text x="382.5" y="740.5" font-size="17" font-weight="bold" fill="#5a0c0c" text-anchor="middle">MANUAL DISCONNECT</text>
+<text x="382.5" y="761.5" font-size="15" fill="#263040" text-anchor="middle">arming plug in left</text>
+<text x="382.5" y="780.5" font-size="15" fill="#263040" text-anchor="middle">hub (external, flush)</text>
+<rect x="530" y="705" width="190" height="100" rx="10" fill="#fff4d6" stroke="#c98a00" stroke-width="2.0"/>
+<text x="625.0" y="740.5" font-size="17" font-weight="bold" fill="#4a3300" text-anchor="middle">Main bus</text>
+<text x="625.0" y="761.5" font-size="15" fill="#263040" text-anchor="middle">40 A fuse at pack,</text>
+<text x="625.0" y="780.5" font-size="15" fill="#263040" text-anchor="middle">V / I monitor</text>
+<rect x="775" y="705" width="220" height="100" rx="10" fill="#fff4d6" stroke="#c98a00" stroke-width="2.0"/>
+<text x="885.0" y="731.0" font-size="17" font-weight="bold" fill="#4a3300" text-anchor="middle">Voltage regulation</text>
+<text x="885.0" y="752.0" font-size="15" fill="#263040" text-anchor="middle">5.1 V / 5 A: Pi 5</text>
+<text x="885.0" y="771.0" font-size="15" fill="#263040" text-anchor="middle">3.3-5 V: MCU, sensors,</text>
+<text x="885.0" y="790.0" font-size="15" fill="#263040" text-anchor="middle">safety supervisor</text>
+<rect x="1060" y="705" width="225" height="100" rx="10" fill="#fde8e8" stroke="#c62828" stroke-width="2.6"/>
+<text x="1172.5" y="740.5" font-size="17" font-weight="bold" fill="#5a0c0c" text-anchor="middle">Motor-power contactor</text>
+<text x="1172.5" y="761.5" font-size="15" fill="#263040" text-anchor="middle">NO, e-stop channel A;</text>
+<text x="1172.5" y="780.5" font-size="15" fill="#263040" text-anchor="middle">6 V servo DC-DC after it</text>
+<rect x="40" y="905" width="230" height="110" rx="10" fill="#fde8e8" stroke="#c62828" stroke-width="2.6"/>
+<text x="155.0" y="945.5" font-size="17" font-weight="bold" fill="#5a0c0c" text-anchor="middle">Handheld wireless e-stop</text>
+<text x="155.0" y="966.5" font-size="15" fill="#263040" text-anchor="middle">latching mushroom switch,</text>
+<text x="155.0" y="985.5" font-size="15" fill="#263040" text-anchor="middle">2.4 GHz heartbeat 20 Hz</text>
+<rect x="420" y="905" width="300" height="110" rx="10" fill="#fde8e8" stroke="#c62828" stroke-width="2.6"/>
+<text x="570.0" y="936.0" font-size="17" font-weight="bold" fill="#5a0c0c" text-anchor="middle">E-stop receiver +</text>
+<text x="570.0" y="957.0" font-size="15" fill="#263040" text-anchor="middle">safety supervisor (own MCU)</text>
+<text x="570.0" y="976.0" font-size="15" fill="#263040" text-anchor="middle">fail-safe: no heartbeat = STOP,</text>
+<text x="570.0" y="995.0" font-size="15" fill="#263040" text-anchor="middle">latched until manual re-arm</text>
+<rect x="785" y="905" width="210" height="110" rx="10" fill="#fde8e8" stroke="#c62828" stroke-width="2.6"/>
+<text x="890.0" y="945.5" font-size="17" font-weight="bold" fill="#5a0c0c" text-anchor="middle">Hardware watchdog</text>
+<text x="890.0" y="966.5" font-size="15" fill="#263040" text-anchor="middle">MCU heartbeat</text>
+<text x="890.0" y="985.5" font-size="15" fill="#263040" text-anchor="middle">-&gt; WD_OK</text>
+<rect x="1345" y="905" width="200" height="110" rx="10" fill="#fde8e8" stroke="#c62828" stroke-width="2.6"/>
+<text x="1445.0" y="945.5" font-size="17" font-weight="bold" fill="#5a0c0c" text-anchor="middle">Brake relays (changeover)</text>
+<text x="1445.0" y="966.5" font-size="15" fill="#263040" text-anchor="middle">break-before-make: driver</text>
+<text x="1445.0" y="985.5" font-size="15" fill="#263040" text-anchor="middle">cut, motor shorted</text>
+<rect x="226.2" y="338.0" width="57.6" height="44.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="255.0" y="356.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">CSI-2</text>
+<text x="255.0" y="375.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">50 fps</text>
+<rect x="488.2" y="338.0" width="57.6" height="44.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="517.0" y="356.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">cones,</text>
+<text x="517.0" y="375.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">gates</text>
+<rect x="1002.0" y="338.0" width="50.0" height="44.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1027.0" y="356.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">UART</text>
+<text x="1027.0" y="375.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">50 Hz</text>
+<rect x="1290.0" y="338.0" width="50.0" height="44.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1315.0" y="356.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">PWM /</text>
+<text x="1315.0" y="375.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">DIR</text>
+<rect x="775.2" y="557.5" width="209.6" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="880.0" y="575.5" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">attitude + odometry 100 Hz</text>
+<rect x="1132.6" y="277.5" width="34.8" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1150.0" y="295.5" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">I2C</text>
+<rect x="1225.0" y="265.5" width="50.0" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1250.0" y="283.5" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">quad.</text>
+<rect x="1402.6" y="255.5" width="34.8" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1420.0" y="273.5" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">I2C</text>
+<rect x="893.0" y="655.5" width="50.0" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="918.0" y="673.5" font-size="14.5" fill="#1f8a4c" text-anchor="middle" font-style="italic">5.1 V</text>
+<rect x="1019.4" y="687.5" width="65.2" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1052.0" y="705.5" font-size="14.5" fill="#1f8a4c" text-anchor="middle" font-style="italic">3.3-5 V</text>
+<rect x="846.0" y="825.5" width="88.0" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="890.0" y="843.5" font-size="14.5" fill="#c98a00" text-anchor="middle" font-style="italic">motor feed</text>
+<rect x="1339.8" y="722.5" width="80.4" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1380.0" y="740.5" font-size="14.5" fill="#c98a00" text-anchor="middle" font-style="italic">motor bus</text>
+<rect x="304.8" y="938.0" width="80.4" height="44.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="345.0" y="956.0" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">2.4 GHz</text>
+<text x="345.0" y="975.0" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">heartbeat</text>
+<rect x="1069.8" y="637.5" width="80.4" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1110.0" y="655.5" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">heartbeat</text>
+<rect x="727.0" y="947.5" width="50.0" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="752.0" y="965.5" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">WD_OK</text>
+<rect x="830.6" y="1017.5" width="148.8" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="905.0" y="1035.5" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">contactor coil (A)</text>
+<rect x="1113.2" y="871.5" width="133.6" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1180.0" y="889.5" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">brake relays (B)</text>
+<rect x="1179.4" y="587.5" width="141.2" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1250.0" y="605.5" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">PWM gated off (C)</text>
+<rect x="1643.4" y="578.0" width="65.2" height="44.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1676.0" y="596.0" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">motors</text>
+<text x="1676.0" y="615.0" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">shorted</text>
+<rect x="386.4" y="829.5" width="103.2" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="438.0" y="847.5" font-size="14.5" fill="#c62828" text-anchor="middle" font-style="italic">e-stop state</text>
+<rect x="318.4" y="249.5" width="103.2" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="370.0" y="267.5" font-size="14.5" fill="#8c8c8c" text-anchor="middle" font-style="italic">pre-run only</text>
+<text x="40" y="1135" font-size="14" fill="#555d6b" font-weight="normal" text-anchor="start">Source: diagrams/build_diagrams.py (also exported as svg/System_Architecture.svg and System_Architecture.mmd). PH parts and numbers are Phase 1 placeholders.</text>
+<line x1="40" y1="1090" x2="86" y2="1090" stroke="#3d4654" stroke-width="2.2"/>
+<text x="96" y="1095" font-size="15" fill="#333">information / control</text>
+<line x1="330" y1="1090" x2="376" y2="1090" stroke="#c98a00" stroke-width="5.0"/>
+<text x="386" y="1095" font-size="15" fill="#333">motor power</text>
+<line x1="620" y1="1090" x2="666" y2="1090" stroke="#1f8a4c" stroke-width="2.6"/>
+<text x="676" y="1095" font-size="15" fill="#333">logic power</text>
+<line x1="910" y1="1090" x2="956" y2="1090" stroke="#c62828" stroke-width="3.6"/>
+<text x="966" y="1095" font-size="15" fill="#333">safety path (hardware)</text>
+<line x1="1200" y1="1090" x2="1246" y2="1090" stroke="#c62828" stroke-width="2.0" stroke-dasharray="8 6"/>
+<text x="1256" y="1095" font-size="15" fill="#333">heartbeat / status</text>
+<line x1="1490" y1="1090" x2="1536" y2="1090" stroke="#8c8c8c" stroke-width="2.0" stroke-dasharray="4 5"/>
+<text x="1546" y="1095" font-size="15" fill="#333">pre-run link only</text>
+</svg>

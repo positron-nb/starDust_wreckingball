@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1810" height="1000" viewBox="0 0 1810 1000" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="ah_info" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3d4654"/></marker>
+<marker id="ah_info2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3d4654"/></marker>
+<marker id="ah_power" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c98a00"/></marker>
+<marker id="ah_logic" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f8a4c"/></marker>
+<marker id="ah_safety" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c62828"/></marker>
+<marker id="ah_status" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c62828"/></marker>
+<marker id="ah_dev" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c8c8c"/></marker>
+<marker id="ah_charge" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c8c8c"/></marker>
+</defs>
+<rect x="0" y="0" width="1810" height="1000" fill="#ffffff"/>
+<text x="24" y="44" font-size="30" font-weight="bold" fill="#1b2230">WB-700 - preliminary power distribution</text>
+<text x="24" y="76" font-size="17" fill="#555d6b">Strictly onboard battery power. Every actuator (drive, steering, camera servo) is downstream of the e-stop contactor; the logic rail stays</text>
+<text x="24" y="98" font-size="17" fill="#555d6b">alive so the robot can report and log the stop. Values are Phase 1 design targets; fuse and wire sizes are confirmed in Phase 2.</text>
+<rect x="25" y="130" width="375" height="805" rx="14" fill="#fffaf0" stroke="#c98a00" stroke-width="2"/>
+<text x="39" y="154" font-size="16" font-weight="bold" fill="#c98a00">SOURCE + ISOLATION</text>
+<rect x="430" y="130" width="1355" height="340" rx="14" fill="#f3fbf6" stroke="#1f8a4c" stroke-width="2"/>
+<text x="444" y="154" font-size="16" font-weight="bold" fill="#1f8a4c">LOGIC BRANCH (always on while armed)</text>
+<rect x="430" y="495" width="1355" height="440" rx="14" fill="#fff6f6" stroke="#c62828" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="444" y="519" font-size="16" font-weight="bold" fill="#c62828">ACTUATOR BRANCH (cut by the e-stop)</text>
+<path d="M212.5,285.0 L212.5,325.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M212.5,435.0 L212.5,475.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M212.5,545.0 L212.5,585.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M212.5,695.0 L212.5,735.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M50.0,892.5 L36.0,892.0 L36.0,380.0 L50.0,380.0" fill="none" stroke="#8c8c8c" stroke-width="2.2" stroke-linejoin="round" stroke-dasharray="6 5" marker-end="url(#ah_charge)"/>
+<path d="M375.0,765.0 L420.0,765.0 L420.0,300.0 L470.0,300.0" fill="none" stroke="#1f8a4c" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#ah_logic)"/>
+<path d="M640.0,300.0 L700.0,300.0" fill="none" stroke="#1f8a4c" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#ah_logic)"/>
+<path d="M960.0,280.0 L995.0,280.0 L995.0,200.0 L1030.0,200.0" fill="none" stroke="#1f8a4c" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#ah_logic)"/>
+<path d="M960.0,300.0 L1030.0,300.0" fill="none" stroke="#1f8a4c" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#ah_logic)"/>
+<path d="M960.0,320.0 L995.0,320.0 L995.0,405.0 L1030.0,405.0" fill="none" stroke="#1f8a4c" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#ah_logic)"/>
+<path d="M375.0,805.0 L440.0,805.0 L440.0,680.0 L470.0,680.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M640.0,680.0 L700.0,680.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M960.0,680.0 L1030.0,680.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M1290.0,660.0 L1325.0,660.0 L1325.0,565.0 L1360.0,565.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M1460.0,600.0 L1460.0,625.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M1560.0,649.0 L1580.0,649.0 L1580.0,565.0 L1600.0,565.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M1560.0,681.0 L1580.0,681.0 L1580.0,665.0 L1600.0,665.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M1108.0,730.0 L1108.0,760.0 L1105.0,760.0 L1105.0,790.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M1180.0,825.0 L1230.0,825.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M1420.0,825.0 L1470.0,825.0" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M1069.0,730.0 L1069.0,760.0 L1010.0,760.0 L1010.0,901.0 L1030.0,901.5" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<path d="M1180.0,901.5 L1230.0,901.5" fill="none" stroke="#c98a00" stroke-width="5.0" stroke-linejoin="round" marker-end="url(#ah_power)"/>
+<rect x="50" y="175" width="325" height="110" rx="10" fill="#fff4d6" stroke="#c98a00" stroke-width="2.0"/>
+<text x="212.5" y="206.0" font-size="17" font-weight="bold" fill="#4a3300" text-anchor="middle">Battery 6S1P Li-ion 21700</text>
+<text x="212.5" y="227.0" font-size="15" fill="#263040" text-anchor="middle">Molicel P45B cells (datasheet)</text>
+<text x="212.5" y="246.0" font-size="15" fill="#263040" text-anchor="middle">21.6 V nom., 18.0-25.2 V</text>
+<text x="212.5" y="265.0" font-size="15" fill="#263040" text-anchor="middle">4.5 Ah, ~97 Wh (&lt; 100 Wh)</text>
+<rect x="50" y="325" width="325" height="110" rx="10" fill="#fff4d6" stroke="#c98a00" stroke-width="2.0"/>
+<text x="212.5" y="356.0" font-size="17" font-weight="bold" fill="#4a3300" text-anchor="middle">6S BMS</text>
+<text x="212.5" y="377.0" font-size="15" fill="#263040" text-anchor="middle">under-voltage cut-off (LVC),</text>
+<text x="212.5" y="396.0" font-size="15" fill="#263040" text-anchor="middle">over-voltage, over-current,</text>
+<text x="212.5" y="415.0" font-size="15" fill="#263040" text-anchor="middle">short-circuit, temperature, balance</text>
+<rect x="50" y="475" width="325" height="70" rx="10" fill="#fff4d6" stroke="#c98a00" stroke-width="2.0"/>
+<text x="212.5" y="505.0" font-size="17" font-weight="bold" fill="#4a3300" text-anchor="middle">Main fuse 40 A</text>
+<text x="212.5" y="526.0" font-size="15" fill="#263040" text-anchor="middle">at the pack terminals</text>
+<rect x="50" y="585" width="325" height="110" rx="10" fill="#fde8e8" stroke="#c62828" stroke-width="2.6"/>
+<text x="212.5" y="625.5" font-size="17" font-weight="bold" fill="#5a0c0c" text-anchor="middle">MANUAL DISCONNECT</text>
+<text x="212.5" y="646.5" font-size="15" fill="#263040" text-anchor="middle">anti-spark arming plug</text>
+<text x="212.5" y="665.5" font-size="15" fill="#263040" text-anchor="middle">(XT90-S class), left polar hub</text>
+<rect x="50" y="735" width="325" height="100" rx="10" fill="#fff4d6" stroke="#c98a00" stroke-width="2.0"/>
+<text x="212.5" y="770.5" font-size="17" font-weight="bold" fill="#4a3300" text-anchor="middle">Main bus 18-25.2 V</text>
+<text x="212.5" y="791.5" font-size="15" fill="#263040" text-anchor="middle">INA228-class V/I monitor</text>
+<text x="212.5" y="810.5" font-size="15" fill="#263040" text-anchor="middle">software LVC warning to MCU</text>
+<rect x="50" y="860" width="325" height="65" rx="10" fill="#fff4d6" stroke="#c98a00" stroke-width="2.0"/>
+<text x="212.5" y="887.5" font-size="17" font-weight="bold" fill="#4a3300" text-anchor="middle">Charge port, left hub</text>
+<text x="212.5" y="908.5" font-size="15" fill="#263040" text-anchor="middle">CC/CV 25.2 V, plug removed</text>
+<rect x="470" y="260" width="170" height="80" rx="10" fill="#fff4d6" stroke="#c98a00" stroke-width="2.0"/>
+<text x="555.0" y="295.0" font-size="17" font-weight="bold" fill="#4a3300" text-anchor="middle">Fuse 5 A</text>
+<text x="555.0" y="316.0" font-size="15" fill="#263040" text-anchor="middle">logic branch</text>
+<rect x="700" y="250" width="260" height="100" rx="10" fill="#fff4d6" stroke="#c98a00" stroke-width="2.0"/>
+<text x="830.0" y="295.0" font-size="17" font-weight="bold" fill="#4a3300" text-anchor="middle">DC-DC 24 V -&gt; 5.1 V</text>
+<text x="830.0" y="316.0" font-size="15" fill="#263040" text-anchor="middle">5 A (Pi 5 needs 5 A)</text>
+<rect x="1030" y="165" width="290" height="70" rx="10" fill="#e3f4ea" stroke="#1f8a4c" stroke-width="2.0"/>
+<text x="1175.0" y="195.0" font-size="17" font-weight="bold" fill="#0f3a22" text-anchor="middle">Raspberry Pi 5 + camera</text>
+<text x="1175.0" y="216.0" font-size="15" fill="#263040" text-anchor="middle">~8-12 W (estimate)</text>
+<rect x="1030" y="265" width="290" height="70" rx="10" fill="#e3f4ea" stroke="#1f8a4c" stroke-width="2.0"/>
+<text x="1175.0" y="295.0" font-size="17" font-weight="bold" fill="#0f3a22" text-anchor="middle">MCU + sensors</text>
+<text x="1175.0" y="316.0" font-size="15" fill="#263040" text-anchor="middle">3.3 V on-board LDO</text>
+<rect x="1030" y="365" width="290" height="80" rx="10" fill="#fde8e8" stroke="#c62828" stroke-width="2.6"/>
+<text x="1175.0" y="400.0" font-size="17" font-weight="bold" fill="#5a0c0c" text-anchor="middle">Safety supervisor + RX</text>
+<text x="1175.0" y="421.0" font-size="15" fill="#263040" text-anchor="middle">+ watchdog + status LED</text>
+<rect x="1380" y="175" width="385" height="270" rx="10" fill="#fffbe6" stroke="#d8c26a" stroke-width="2.0"/>
+<text x="1572.5" y="248.0" font-size="17" font-weight="bold" fill="#4a4020" text-anchor="middle">Logic power notes</text>
+<text x="1572.5" y="269.0" font-size="15" fill="#263040" text-anchor="middle">Pi 5 needs a stable 5.1 V / 5 A rail.</text>
+<text x="1572.5" y="288.0" font-size="15" fill="#263040" text-anchor="middle">Separate regulated branches</text>
+<text x="1572.5" y="307.0" font-size="15" fill="#263040" text-anchor="middle">reduce electrical coupling;</text>
+<text x="1572.5" y="326.0" font-size="15" fill="#263040" text-anchor="middle">logic-rail stability during motor</text>
+<text x="1572.5" y="345.0" font-size="15" fill="#263040" text-anchor="middle">start, stall and braking needs verification.</text>
+<text x="1572.5" y="364.0" font-size="15" fill="#263040" text-anchor="middle">Common ground; motor return</text>
+<text x="1572.5" y="383.0" font-size="15" fill="#263040" text-anchor="middle">kept short and star-pointed.</text>
+<rect x="470" y="640" width="170" height="80" rx="10" fill="#fff4d6" stroke="#c98a00" stroke-width="2.0"/>
+<text x="555.0" y="675.0" font-size="17" font-weight="bold" fill="#4a3300" text-anchor="middle">Fuse 30 A</text>
+<text x="555.0" y="696.0" font-size="15" fill="#263040" text-anchor="middle">actuator branch</text>
+<rect x="700" y="630" width="260" height="100" rx="10" fill="#fde8e8" stroke="#c62828" stroke-width="2.6"/>
+<text x="830.0" y="665.5" font-size="17" font-weight="bold" fill="#5a0c0c" text-anchor="middle">Contactor, NO</text>
+<text x="830.0" y="686.5" font-size="15" fill="#263040" text-anchor="middle">e-stop channel A</text>
+<text x="830.0" y="705.5" font-size="15" fill="#263040" text-anchor="middle">coil from supervisor</text>
+<rect x="1030" y="630" width="260" height="100" rx="10" fill="#fff4d6" stroke="#c98a00" stroke-width="2.0"/>
+<text x="1160.0" y="665.5" font-size="17" font-weight="bold" fill="#4a3300" text-anchor="middle">Motor bus</text>
+<text x="1160.0" y="686.5" font-size="15" fill="#263040" text-anchor="middle">TVS + bulk capacitor</text>
+<text x="1160.0" y="705.5" font-size="15" fill="#263040" text-anchor="middle">(regeneration clamp)</text>
+<rect x="1360" y="530" width="200" height="70" rx="10" fill="#e6eefb" stroke="#2b5cb8" stroke-width="2.0"/>
+<text x="1460.0" y="560.0" font-size="17" font-weight="bold" fill="#0e2350" text-anchor="middle">Dual drive driver</text>
+<text x="1460.0" y="581.0" font-size="15" fill="#263040" text-anchor="middle">20 A per channel</text>
+<rect x="1360" y="625" width="200" height="80" rx="10" fill="#fde8e8" stroke="#c62828" stroke-width="2.6"/>
+<text x="1460.0" y="660.0" font-size="17" font-weight="bold" fill="#5a0c0c" text-anchor="middle">Brake relays (C/O)</text>
+<text x="1460.0" y="681.0" font-size="15" fill="#263040" text-anchor="middle">driver cut, motor shorted</text>
+<rect x="1600" y="535" width="165" height="60" rx="10" fill="#e6eefb" stroke="#2b5cb8" stroke-width="2.0"/>
+<text x="1682.5" y="569.5" font-size="17" font-weight="bold" fill="#0e2350" text-anchor="middle">Gearmotor L</text>
+<rect x="1600" y="635" width="165" height="60" rx="10" fill="#e6eefb" stroke="#2b5cb8" stroke-width="2.0"/>
+<text x="1682.5" y="669.5" font-size="17" font-weight="bold" fill="#0e2350" text-anchor="middle">Gearmotor R</text>
+<rect x="1030" y="790" width="150" height="70" rx="10" fill="#fff4d6" stroke="#c98a00" stroke-width="2.0"/>
+<text x="1105.0" y="829.5" font-size="17" font-weight="bold" fill="#4a3300" text-anchor="middle">Fuse 5 A</text>
+<rect x="1230" y="790" width="190" height="70" rx="10" fill="#e6eefb" stroke="#2b5cb8" stroke-width="2.0"/>
+<text x="1325.0" y="829.5" font-size="17" font-weight="bold" fill="#0e2350" text-anchor="middle">Steering driver</text>
+<rect x="1470" y="790" width="295" height="70" rx="10" fill="#e6eefb" stroke="#2b5cb8" stroke-width="2.0"/>
+<text x="1617.5" y="820.0" font-size="17" font-weight="bold" fill="#0e2350" text-anchor="middle">Steering worm gearmotor</text>
+<text x="1617.5" y="841.0" font-size="15" fill="#263040" text-anchor="middle">self-locking when unpowered</text>
+<rect x="1030" y="878" width="150" height="47" rx="10" fill="#fff4d6" stroke="#c98a00" stroke-width="2.0"/>
+<text x="1105.0" y="906.0" font-size="17" font-weight="bold" fill="#4a3300" text-anchor="middle">DC-DC 6 V / 3 A</text>
+<rect x="1230" y="878" width="190" height="47" rx="10" fill="#e6eefb" stroke="#2b5cb8" stroke-width="2.0"/>
+<text x="1325.0" y="906.0" font-size="17" font-weight="bold" fill="#0e2350" text-anchor="middle">Camera servo</text>
+<rect x="7.2" y="607.5" width="57.6" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="36.0" y="625.5" font-size="14.5" fill="#8c8c8c" text-anchor="middle" font-style="italic">charge</text>
+<line x1="40" y1="970" x2="86" y2="970" stroke="#c98a00" stroke-width="5.0"/>
+<text x="96" y="975" font-size="15" fill="#333">battery / motor power</text>
+<line x1="370" y1="970" x2="416" y2="970" stroke="#1f8a4c" stroke-width="2.6"/>
+<text x="426" y="975" font-size="15" fill="#333">logic power</text>
+<line x1="700" y1="970" x2="746" y2="970" stroke="#8c8c8c" stroke-width="2.2" stroke-dasharray="6 5"/>
+<text x="756" y="975" font-size="15" fill="#333">charging (plug removed)</text>
+</svg>

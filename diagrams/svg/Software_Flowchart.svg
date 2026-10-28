@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1810" height="1230" viewBox="0 0 1810 1230" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="ah_info" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3d4654"/></marker>
+<marker id="ah_info2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3d4654"/></marker>
+<marker id="ah_power" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c98a00"/></marker>
+<marker id="ah_logic" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f8a4c"/></marker>
+<marker id="ah_safety" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c62828"/></marker>
+<marker id="ah_status" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c62828"/></marker>
+<marker id="ah_dev" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c8c8c"/></marker>
+<marker id="ah_charge" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c8c8c"/></marker>
+</defs>
+<rect x="0" y="0" width="1810" height="1230" fill="#ffffff"/>
+<text x="24" y="44" font-size="30" font-weight="bold" fill="#1b2230">WB-700 - software flowchart: vision / AI stack and course state machine</text>
+<text x="24" y="76" font-size="17" fill="#555d6b">Concept level for Phase 1. Everything runs on the Raspberry Pi 5; the MCU closes the 500 Hz loops. Algorithms are developed and validated in Phase 2.</text>
+<rect x="25" y="125" width="805" height="1025" rx="14" fill="#f3fbf6" stroke="#1f8a4c" stroke-width="2"/>
+<text x="39" y="149" font-size="16" font-weight="bold" fill="#1f8a4c">VISION + AI STACK (per frame, 50 fps target)</text>
+<rect x="860" y="125" width="925" height="1025" rx="14" fill="#fafbfc" stroke="#3d4654" stroke-width="2"/>
+<text x="874" y="149" font-size="16" font-weight="bold" fill="#3d4654">COURSE STATE MACHINE</text>
+<path d="M427.5,245.0 L427.5,275.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M427.5,365.0 L427.5,395.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M328.8,475.0 L328.8,497.5 L261.0,497.5 L261.0,520.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M526.2,475.0 L526.2,497.5 L594.0,497.5 L594.0,520.0" fill="none" stroke="#3d4654" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#ah_info2)"/>
+<path d="M225.0,620.0 L225.0,660.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M450.0,600.0 L425.0,600.0 L425.0,705.0 L405.0,705.0" fill="none" stroke="#3d4654" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#ah_info2)"/>
+<path d="M625.0,435.0 L815.0,435.0 L815.0,735.0 L810.0,735.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M225.0,750.0 L225.0,790.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M225.0,890.0 L225.0,930.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M630.0,790.0 L630.0,830.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M225.0,1010.0 L225.0,1090.0 L230.0,1090.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M630.0,920.0 L630.0,1090.0 L625.0,1090.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1085.0,227.0 L1085.0,265.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1085.0,327.0 L1085.0,365.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1085.0,427.0 L1085.0,465.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1085.0,527.0 L1085.0,565.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1085.0,627.0 L1085.0,665.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1085.0,727.0 L1085.0,765.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M935.0,796.0 L897.0,796.0 L897.0,596.0 L935.0,596.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1235.0,796.0 L1450.0,796.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1600.0,765.0 L1600.0,727.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1600.0,665.0 L1600.0,627.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1600.0,565.0 L1600.0,527.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1600.0,465.0 L1600.0,427.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1600.0,365.0 L1600.0,327.0" fill="none" stroke="#3d4654" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#ah_info)"/>
+<path d="M1600.0,827.0 L1600.0,853.5 L1546.2,853.5 L1546.2,880.0" fill="none" stroke="#c62828" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8 6" marker-end="url(#ah_status)"/>
+<rect x="230" y="165" width="395" height="80" rx="10" fill="#e3f4ea" stroke="#1f8a4c" stroke-width="2.0"/>
+<text x="427.5" y="200.0" font-size="17" font-weight="bold" fill="#0f3a22" text-anchor="middle">Capture</text>
+<text x="427.5" y="221.0" font-size="15" fill="#263040" text-anchor="middle">Camera Module 3 Wide, 1280 x 720 @ 50 fps</text>
+<rect x="230" y="275" width="395" height="90" rx="10" fill="#e3f4ea" stroke="#1f8a4c" stroke-width="2.0"/>
+<text x="427.5" y="305.5" font-size="17" font-weight="bold" fill="#0f3a22" text-anchor="middle">Rectify</text>
+<text x="427.5" y="326.5" font-size="15" fill="#263040" text-anchor="middle">undistort (calibrated through the shell),</text>
+<text x="427.5" y="345.5" font-size="15" fill="#263040" text-anchor="middle">apply static seam-band mask</text>
+<rect x="230" y="395" width="395" height="80" rx="10" fill="#e3f4ea" stroke="#1f8a4c" stroke-width="2.0"/>
+<text x="427.5" y="430.0" font-size="17" font-weight="bold" fill="#0f3a22" text-anchor="middle">Geometry</text>
+<text x="427.5" y="451.0" font-size="15" fill="#263040" text-anchor="middle">IMU attitude + servo angle -&gt; ground homography</text>
+<rect x="45" y="520" width="360" height="100" rx="10" fill="#e3f4ea" stroke="#1f8a4c" stroke-width="2.0"/>
+<text x="225.0" y="555.5" font-size="17" font-weight="bold" fill="#0f3a22" text-anchor="middle">Colour segmentation</text>
+<text x="225.0" y="576.5" font-size="15" fill="#263040" text-anchor="middle">red / yellow cones, adaptive HSV</text>
+<text x="225.0" y="595.5" font-size="15" fill="#263040" text-anchor="middle">tuned on Sector 1 chevron gates</text>
+<rect x="450" y="520" width="360" height="100" rx="10" fill="#f4f4f4" stroke="#9a9a9a" stroke-width="2.0" stroke-dasharray="6 5"/>
+<text x="630.0" y="555.5" font-size="17" font-weight="bold" fill="#555555" text-anchor="middle">Optional CNN detector</text>
+<text x="630.0" y="576.5" font-size="15" fill="#263040" text-anchor="middle">YOLO-nano class: cones + pendulum</text>
+<text x="630.0" y="595.5" font-size="15" fill="#263040" text-anchor="middle">(CPU, or AI HAT+ if added)</text>
+<rect x="45" y="660" width="360" height="90" rx="10" fill="#e3f4ea" stroke="#1f8a4c" stroke-width="2.0"/>
+<text x="225.0" y="690.5" font-size="17" font-weight="bold" fill="#0f3a22" text-anchor="middle">Cone map</text>
+<text x="225.0" y="711.5" font-size="15" fill="#263040" text-anchor="middle">blob filter + ground projection</text>
+<text x="225.0" y="730.5" font-size="15" fill="#263040" text-anchor="middle">-&gt; cone positions</text>
+<rect x="45" y="790" width="360" height="100" rx="10" fill="#e3f4ea" stroke="#1f8a4c" stroke-width="2.0"/>
+<text x="225.0" y="825.5" font-size="17" font-weight="bold" fill="#0f3a22" text-anchor="middle">Track model</text>
+<text x="225.0" y="846.5" font-size="15" fill="#263040" text-anchor="middle">yellow = left, red = right (RANSAC)</text>
+<text x="225.0" y="865.5" font-size="15" fill="#263040" text-anchor="middle">-&gt; lane centre, heading error, gates</text>
+<rect x="450" y="680" width="360" height="110" rx="10" fill="#e3f4ea" stroke="#1f8a4c" stroke-width="2.0"/>
+<text x="630.0" y="720.5" font-size="17" font-weight="bold" fill="#0f3a22" text-anchor="middle">Pendulum tracker (Sector 4)</text>
+<text x="630.0" y="741.5" font-size="15" fill="#263040" text-anchor="middle">bob position x(t) in a ROI;</text>
+<text x="630.0" y="760.5" font-size="15" fill="#263040" text-anchor="middle">fit period, amplitude, phase</text>
+<rect x="45" y="930" width="360" height="80" rx="10" fill="#e3f4ea" stroke="#1f8a4c" stroke-width="2.0"/>
+<text x="225.0" y="965.0" font-size="17" font-weight="bold" fill="#0f3a22" text-anchor="middle">EKF fusion</text>
+<text x="225.0" y="986.0" font-size="15" fill="#263040" text-anchor="middle">vision + IMU + encoders</text>
+<rect x="450" y="830" width="360" height="90" rx="10" fill="#e3f4ea" stroke="#1f8a4c" stroke-width="2.0"/>
+<text x="630.0" y="870.0" font-size="17" font-weight="bold" fill="#0f3a22" text-anchor="middle">Crossing-window predictor</text>
+<text x="630.0" y="891.0" font-size="15" fill="#263040" text-anchor="middle">time-to-cross vs. pendulum clearance</text>
+<rect x="230" y="1050" width="395" height="80" rx="10" fill="#e1f0f6" stroke="#1d7894" stroke-width="2.0"/>
+<text x="427.5" y="1085.0" font-size="17" font-weight="bold" fill="#0b3240" text-anchor="middle">Controllers + state machine</text>
+<text x="427.5" y="1106.0" font-size="15" fill="#263040" text-anchor="middle">speed profile, lean command, stop / go</text>
+<rect x="935" y="165" width="300" height="62" rx="26" fill="#ffffff" stroke="#3d4654" stroke-width="2.0"/>
+<text x="1085.0" y="200.5" font-size="17" font-weight="bold" fill="#1b2230" text-anchor="middle">SAFE_IDLE</text>
+<rect x="935" y="265" width="300" height="62" rx="26" fill="#ffffff" stroke="#3d4654" stroke-width="2.0"/>
+<text x="1085.0" y="300.5" font-size="17" font-weight="bold" fill="#1b2230" text-anchor="middle">ARMED</text>
+<rect x="935" y="365" width="300" height="62" rx="26" fill="#ffffff" stroke="#3d4654" stroke-width="2.0"/>
+<text x="1085.0" y="400.5" font-size="17" font-weight="bold" fill="#1b2230" text-anchor="middle">CALIBRATE</text>
+<rect x="935" y="465" width="300" height="62" rx="26" fill="#ffffff" stroke="#3d4654" stroke-width="2.0"/>
+<text x="1085.0" y="500.5" font-size="17" font-weight="bold" fill="#1b2230" text-anchor="middle">RUNWAY</text>
+<rect x="935" y="565" width="300" height="62" rx="26" fill="#ffffff" stroke="#3d4654" stroke-width="2.0"/>
+<text x="1085.0" y="600.5" font-size="17" font-weight="bold" fill="#1b2230" text-anchor="middle">RAMP_APPROACH</text>
+<rect x="935" y="665" width="300" height="62" rx="26" fill="#ffffff" stroke="#3d4654" stroke-width="2.0"/>
+<text x="1085.0" y="700.5" font-size="17" font-weight="bold" fill="#1b2230" text-anchor="middle">RAMP_CLIMB</text>
+<rect x="935" y="765" width="300" height="62" rx="26" fill="#ffffff" stroke="#3d4654" stroke-width="2.0"/>
+<text x="1085.0" y="800.5" font-size="17" font-weight="bold" fill="#1b2230" text-anchor="middle">RAMP_EXIT</text>
+<rect x="1450" y="265" width="300" height="62" rx="26" fill="#ffffff" stroke="#3d4654" stroke-width="2.0"/>
+<text x="1600.0" y="300.5" font-size="17" font-weight="bold" fill="#1b2230" text-anchor="middle">FINISH</text>
+<rect x="1450" y="365" width="300" height="62" rx="26" fill="#ffffff" stroke="#3d4654" stroke-width="2.0"/>
+<text x="1600.0" y="400.5" font-size="17" font-weight="bold" fill="#1b2230" text-anchor="middle">CROSS</text>
+<rect x="1450" y="465" width="300" height="62" rx="26" fill="#ffffff" stroke="#3d4654" stroke-width="2.0"/>
+<text x="1600.0" y="500.5" font-size="17" font-weight="bold" fill="#1b2230" text-anchor="middle">COMMIT</text>
+<rect x="1450" y="565" width="300" height="62" rx="26" fill="#ffffff" stroke="#3d4654" stroke-width="2.0"/>
+<text x="1600.0" y="600.5" font-size="17" font-weight="bold" fill="#1b2230" text-anchor="middle">OBSERVE</text>
+<rect x="1450" y="665" width="300" height="62" rx="26" fill="#ffffff" stroke="#3d4654" stroke-width="2.0"/>
+<text x="1600.0" y="700.5" font-size="17" font-weight="bold" fill="#1b2230" text-anchor="middle">PENDULUM_HOLD</text>
+<rect x="1450" y="765" width="300" height="62" rx="26" fill="#ffffff" stroke="#3d4654" stroke-width="2.0"/>
+<text x="1600.0" y="800.5" font-size="17" font-weight="bold" fill="#1b2230" text-anchor="middle">WRECKING_ZONE</text>
+<rect x="935" y="880" width="815" height="80" rx="16" fill="#fde8e8" stroke="#c62828" stroke-width="2.6"/>
+<text x="1342.5" y="915.0" font-size="17" font-weight="bold" fill="#5a0c0c" text-anchor="middle">SAFE_STOP  (from ANY state)</text>
+<text x="1342.5" y="936.0" font-size="15" fill="#263040" text-anchor="middle">watchdog time-out, lane lost &gt; 0.5 s, low battery, excessive tilt -&gt; controlled stop</text>
+<rect x="935" y="985" width="815" height="80" rx="16" fill="#fde8e8" stroke="#c62828" stroke-width="2.6"/>
+<text x="1342.5" y="1020.0" font-size="17" font-weight="bold" fill="#5a0c0c" text-anchor="middle">E-STOP  (hardware, latching)</text>
+<text x="1342.5" y="1041.0" font-size="15" fill="#263040" text-anchor="middle">contactor open + changeover brake relays + PWM gated off; overrides software; re-arm only</text>
+<rect x="1440" y="165" width="310" height="65" rx="8" fill="#fffbe6" stroke="#d8c26a" stroke-width="2.0"/>
+<text x="1595.0" y="192.5" font-size="17" font-weight="bold" fill="#4a4020" text-anchor="middle">Wrecking zone strategy</text>
+<text x="1595.0" y="213.5" font-size="15" fill="#263040" text-anchor="middle">gyro heading hold + border cones</text>
+<rect x="1233.4" y="224.0" width="217.2" height="44.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1342.0" y="242.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">arming plug in, e-stop RUN,</text>
+<text x="1342.0" y="261.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">self-test OK</text>
+<rect x="1260.0" y="324.0" width="164.0" height="44.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1342.0" y="342.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">start trigger</text>
+<text x="1342.0" y="361.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">(method: organisers)</text>
+<rect x="1271.4" y="424.0" width="141.2" height="44.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1342.0" y="442.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">thresholds locked</text>
+<text x="1342.0" y="461.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">on chevron gates</text>
+<rect x="1275.2" y="524.0" width="133.6" height="44.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1342.0" y="542.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">odometry ~13 m</text>
+<text x="1342.0" y="561.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">or ramp detected</text>
+<rect x="1275.2" y="624.0" width="133.6" height="44.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1342.0" y="642.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">aligned in gate,</text>
+<text x="1342.0" y="661.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">speed &gt;= v_ramp</text>
+<rect x="1282.8" y="724.0" width="118.4" height="44.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1342.0" y="742.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">IMU pitch back</text>
+<text x="1342.0" y="761.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">near level</text>
+<rect x="868.2" y="674.0" width="57.6" height="44.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="897.0" y="692.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">repeat</text>
+<text x="897.0" y="711.0" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">x 3</text>
+<rect x="1260.0" y="805.5" width="164.0" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1342.0" y="823.5" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">3 ramps done (~35 m)</text>
+<rect x="1505.4" y="733.5" width="179.2" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1595.0" y="751.5" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">~53 m or pendulum seen</text>
+<rect x="1490.2" y="633.5" width="209.6" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1595.0" y="651.5" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">stopped before swing plane</text>
+<rect x="1509.2" y="533.5" width="171.6" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1595.0" y="551.5" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">safe window predicted</text>
+<rect x="1581.4" y="433.5" width="27.2" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1595.0" y="451.5" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">go</text>
+<rect x="1516.8" y="333.5" width="156.4" height="25.0" rx="5" fill="#ffffff" fill-opacity="0.94" stroke="none"/>
+<text x="1595.0" y="351.5" font-size="14.5" fill="#3d4654" text-anchor="middle" font-style="italic">~75 m / finish seen</text>
+<text x="935" y="1105" font-size="15" fill="#555d6b" font-weight="normal" text-anchor="start">Distances are odometry cues from the published sector map (0-15-35-55-75 m); vision cues take priority.</text>
+<line x1="40" y1="1195" x2="86" y2="1195" stroke="#3d4654" stroke-width="2.2"/>
+<text x="96" y="1200" font-size="15" fill="#333">data / transition</text>
+<line x1="340" y1="1195" x2="386" y2="1195" stroke="#3d4654" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="396" y="1200" font-size="15" fill="#333">optional path</text>
+<line x1="640" y1="1195" x2="686" y2="1195" stroke="#c62828" stroke-width="2.0" stroke-dasharray="8 6"/>
+<text x="696" y="1200" font-size="15" fill="#333">fault transition</text>
+</svg>

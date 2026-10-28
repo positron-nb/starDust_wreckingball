@@ -1,0 +1,10 @@
+# Python environment and caches
+.venv/
+__pycache__/
+*.pyc
+
+# Regenerated intermediates (build_docs.py rebuilds these)
+build/
+
+# Local copy of the Drive upload folder (duplicates files already in the repo)
+WB-700_Phase1_Supporting_Material/
